@@ -23,7 +23,7 @@ app.post("/users",async (req, res)=>{
         const user = {"name": req.body.name, password: hashedPassword}
         res.status (200).json({Message: "users created successfully", user })
     } catch  (error) {
-        res.status(500).send("somethin is wrong with this server")
+        res.status(500).send("somethin is wrong with  server")
         
     }
    
